@@ -1,7 +1,9 @@
 const assert=require('assert').strict;
-let x=5,y=4;
+let regex=/pradeep/;
+let exp="i am very good pradeep"
 try{
-    assert.ifError(undefined)//this ifError only accept null and undefined and every thing will be error;
+    assert.match(exp,regex)
+    console.log("no error")
 }
 catch(error){
     console.log('error',error)
