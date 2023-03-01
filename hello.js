@@ -1,8 +1,7 @@
 const assert=require('assert').strict;
-let regex=/pradeep/;
-let exp="i am very good pradeep"
+let a=5,b=6;
 try{
-    assert.match(exp,regex)
+    assert.notDeepStrictEqual(a,b);
     console.log("no error")
 }
 catch(error){
